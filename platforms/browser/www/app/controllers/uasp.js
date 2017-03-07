@@ -1,4 +1,4 @@
-myApp.controller("uaspCtrl", function ($scope, $location, $http) {
+safa.controller("uaspCtrl", function ($scope, $location, $http) {
 
     $scope.MainTitle = 'إرسال إلي المخاع';
     $scope.user = JSON.parse(window.localStorage.getItem('user'));

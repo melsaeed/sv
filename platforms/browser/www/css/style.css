@@ -118,6 +118,8 @@ select {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
+    margin-bottom: 60px;
 }
 .nav-btn {
     float: right;
@@ -203,9 +205,8 @@ select {
 }
 .the-center {
     position: absolute;
-    top: 115px;
-    right: 153px;
-
+    top: calc(50% - 67px);
+    right: calc(50% - 36px);
 }
 .img-center {
     border-radius: 100%; 

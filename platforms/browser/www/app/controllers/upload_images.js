@@ -1,8 +1,6 @@
-myApp.controller("upload_imagesCtrl",function($scope, $location, $http){
+safa.controller("upload_imagesCtrl",function($scope, $location, $http){
     $scope.MainTitle = 'تحميل الصور';
     $scope.user = JSON.parse(window.localStorage.getItem('user'));
-
-    console.log($scope.user);
 
     $scope.companies = function() {
         //make a payload

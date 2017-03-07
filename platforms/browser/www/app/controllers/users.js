@@ -1,4 +1,5 @@
 safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
+    $scope.MainTitle = 'الفريق';
     $scope.tab_content = "templates/users/users.html";
 
     $scope.userEmail = '';
@@ -56,8 +57,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
         if ($scope.sm1.indexOf($scope.key.users[idx].user_id) != -1) {
             $scope.key.users[idx].checked = 0;
             $scope.sm1.splice($scope.sm1.indexOf($scope.key.users[idx].user_id), 1);
-        }
-        else {
+        } else {
             $scope.key.users[idx].checked = 1;
             $scope.sm1.push($scope.key.users[idx].user_id);
         }
@@ -72,8 +72,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
             }).then(function (res) {
                 $scope.key.users[idx].deactivated = 1;
             });
-        }
-        else {
+        } else {
             $http({
                 url: api_url + 'key/status',
                 data: {user_id: $scope.key.users[idx].user_id, status: 0},
@@ -236,11 +235,11 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     };
 
     $scope.confirmed_accept = function () {
-        $users = $scope.invitations.incoming.filter(function(x){
+        $users = $scope.invitations.incoming.filter(function (x) {
             return x.checked = true;
         });
         $user_idz = Array();
-        angular.forEach($users, function(x){
+        angular.forEach($users, function (x) {
             $user_idz.push(x.user_id);
         });
         $http({
@@ -256,11 +255,11 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     };
 
     $scope._refuse = function (idx) {
-        $users = $scope.invitations.incoming.filter(function(x){
+        $users = $scope.invitations.incoming.filter(function (x) {
             return x.checked = true;
         });
         $user_idz = Array();
-        angular.forEach($users, function(x){
+        angular.forEach($users, function (x) {
             $user_idz.push(x.user_id);
         });
         $http({
@@ -324,8 +323,7 @@ safa.controller('create_groupCtrl', function ($scope, $rootScope, $http, $locati
         if ($scope.srcenz.indexOf($scope.screens[type][idx].screen_id) != -1) {
             $scope.screens[type][idx].checked = 0;
             $scope.srcenz.splice($scope.srcenz.indexOf($scope.screens[type][idx].screen_id), 1);
-        }
-        else {
+        } else {
             $scope.screens[type][idx].checked = 1;
             $scope.srcenz.push($scope.screens[type][idx].screen_id);
         }
@@ -438,8 +436,7 @@ safa.controller('edit_groupCtrl', function ($scope, $rootScope, $http, $location
         if ($scope.srcenz.indexOf($scope.screens[type][idx].screen_id) != -1) {
             $scope.screens[type][idx].checked = 0;
             $scope.srcenz.splice($scope.srcenz.indexOf($scope.screens[type][idx].screen_id), 1);
-        }
-        else {
+        } else {
             $scope.screens[type][idx].checked = 1;
             $scope.srcenz.push($scope.screens[type][idx].screen_id);
         }

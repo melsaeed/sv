@@ -6,23 +6,45 @@
 
 
 safa.controller('loginCtrl', function ($scope, $http, $location, $cookies) {
-    $scope.credintials = {email: "h.jabban@safavisa.com", password: "2120828"};
+    $scope.credintials = {key: '9999', email: "h.jabban@safavisa.com", password: "2120828"};
     $scope.login = function () {
+        
+        $('button').html("<i class='fa fa-spinner fa-pulse fa-fw'></i>");
+
         $http({
-            url: api_url + 'auth/login',
-            withCredentials: true,
-            params: {email: $scope.credintials.email, password: calcMD5($scope.credintials.password)},
-            method: 'GET'
-        }).then(function (response) {
-            if (response.data.error) {
-                error.fire(response.data.message);
-                response.data.token
+            url: 'http://login.safavisa.com/offline/auth/'+$scope.credintials.email+'/'+md5($scope.credintials.password)+'/'+$scope.credintials.key,
+            method: 'get',
+        }).then(function(res){
+            if(res.data.error) {
+                alert(res.data.message);
+                $('button').html("دخول");
             }
-            else{
-                window.localStorage.setItem('token', response.data.token);
+            else
+            {
+                window.localStorage.setItem('login', JSON.stringify({email: $scope.credintials.email, password: md5($scope.credintials.password)}));
+                window.localStorage.setItem('user', JSON.stringify(res.data));
+                window.localStorage.setItem('token', res.data.token);
+
+                //console.log(JSON.parse(window.localStorage.getItem('user')));
                 $location.path('dashboard');
             }
         });
+        
+        
+//        $http({
+//            url: api_url + 'auth/login',
+//            withCredentials: true,
+//            params: {email: $scope.credintials.email, password: calcMD5($scope.credintials.password)},
+//            method: 'GET'
+//        }).then(function (response) {
+//            if (response.data.error) {
+//                error.fire(response.data.message);
+//                response.data.token
+//            }
+//            else{
+//                $location.path('dashboard');
+//            }
+//        });
     };
 
     //dropdowns.countries('.countries');
