@@ -1,0 +1,692 @@
+
+<div ng-include src="'templates/header.html'"></div>
+
+<!--<div class="main-content-page">
+    <div class="main-menu-content">
+        <div ng-include="tab_content"></div>
+    </div>
+</div>-->
+
+
+<main id="panel" class="panel">
+            <div class="home-nav details-nav">
+                <div class="to-left">
+                    <a href="#modal" class="nav-head small-nav-head" ><i class="fa fa-user-plus" aria-hidden="true"></i></a>
+                </div>            
+                <div class="to-right">
+                    <button class="nav-btn js-slideout-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <h3 class="nav-head">فريق العمل</h3>                
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="three-groups">
+                <div class="first-grop grop-active">
+                    <a href="#" class="first-h">جميع الاعضاء</a>
+                </div>
+                <div class="second-grop">
+                    <a href="#" class="second-h">الفريق</a>
+                </div>
+                <div class="third-grop">
+                    <a href="#" class="third-h">الفروع</a>
+                </div>            
+            </div>
+            <div class="one-h show">
+                <input type="text" class="log-input h-input" placeholder="بحث">
+                <div class="new-block">
+                    <div class="first-lock">
+                        <img src="images/HiRes_Large.jpg" class="the-user">
+                    </div>
+                    <div class="second-lock">
+                        <h4 class="user-head-one">احمد محمد محمود</h4>
+                        <h5 class="user-head-two">مدير المبيعات</h5>
+                        <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                    </div>
+                    <div class="third-lock">
+                        <span class="kill-a">
+                            <a href="#modal-edit" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                        </span>
+                        <a href="#modal-edit-roles" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+                    </div>
+
+                </div>
+                <div class="new-block">
+                    <div class="first-lock">
+                        <img src="images/HiRes_Large.jpg" class="the-user">
+                    </div>
+                    <div class="second-lock">
+                        <h4 class="user-head-one">احمد محمد محمود</h4>
+                        <h5 class="user-head-two">مدير المبيعات</h5>
+                        <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                    </div>
+                    <div class="third-lock">
+                        <span class="kill-a">
+                            <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                        </span>
+                        <a href="" class="the-pause"><i class="fa fa-pause-circle" aria-hidden="true"></i></a>
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+                    </div>
+
+                </div>   
+                <div class="new-block">
+                    <div class="first-lock">
+                        <img src="images/HiRes_Large.jpg" class="the-user">
+                    </div>
+                    <div class="second-lock">
+                        <h4 class="user-head-one">احمد محمد محمود</h4>
+                        <h5 class="user-head-two">مدير المبيعات</h5>
+                        <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                    </div>
+                    <div class="third-lock">
+                        <span class="kill-a">
+                            <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                        </span>
+                        <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+                    </div>
+
+                </div> 
+                <div class="new-block">
+                    <div class="first-lock">
+                        <img src="images/HiRes_Large.jpg" class="the-user">
+                    </div>
+                    <div class="second-lock">
+                        <h4 class="user-head-one">احمد محمد محمود</h4>
+                        <h5 class="user-head-two">مدير المبيعات</h5>
+                        <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                    </div>
+                    <div class="third-lock">
+                        <span class="kill-a">
+                            <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                        </span>
+                        <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+                    </div>
+
+                </div>            
+            </div>            
+            <div class="two-h hide">
+                <button class="new-block new-block-no" id="sales">
+                    <div class="second-lock">
+                        <h4 class="user-head-no">فريق المبيعات</h4>
+                    </div>
+                    <div class="third-lock third-lock-no">
+                        <a href="" class="the-lock"><i class="fa fa-lock" aria-hidden="true"></i></a>
+                        <span class="kill-a">
+                            <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                        </span>                  
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+     
+                    </div>
+                </button>   
+                <div class="edit-emp sales show">
+                    <button class="emp-button">اضافة موظف</button>
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div>       
+                </div>
+                <button class="new-block new-block-no" id="support">
+                    <div class="second-lock">
+                        <h4 class="user-head-no">فريق الدعم الفنى</h4>
+                    </div>
+                    <div class="third-lock third-lock-no">
+                        <a href="" class="the-lock"><i class="fa fa-lock" aria-hidden="true"></i></a>
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>                   
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+     
+                    </div>
+                </button> 
+                <div class="edit-emp support hide">
+                    <button class="emp-button">اضافة موظف</button>
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div>       
+                </div>                 
+                <button class="emp-button emp-button-two">اضافة فريق جديد</button>    
+            </div>
+            <div class="three-h hide">
+                <button class="new-block new-block-no" id="first-branch">
+                    <div class="second-lock">
+                        <h4 class="user-head-no">فرع السعودية</h4>
+                    </div>
+                    <div class="third-lock third-lock-no">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>                   
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+     
+                    </div>
+                </button>   
+                <div class="edit-emp sales show">
+                    <button class="emp-button">اضافة موظف</button>
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div>       
+                </div>
+                <button class="new-block new-block-no" id="second-branch">
+                    <div class="second-lock">
+                        <h4 class="user-head-no">فرع السعودية</h4>
+                    </div>
+                    <div class="third-lock third-lock-no">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>                 
+                        <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+     
+                    </div>
+                </button> 
+                <div class="edit-emp support hide">
+                    <button class="emp-button">اضافة موظف</button>
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div> 
+                    <div class="new-block">
+                        <div class="first-lock">
+                            <img src="images/HiRes_Large.jpg" class="the-user">
+                        </div>
+                        <div class="second-lock">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="third-lock">
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>
+                            <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            
+                        </div>
+
+                    </div>       
+                </div>                 
+                <button class="emp-button emp-button-two">اضافة فرع جديد</button>    
+            </div>            
+        </main>
+
+
+        <div class="remodal" data-remodal-id="modal">
+            <button class="log-button-d">ارسال دعوة لموظف</button>
+                <div class="form-content mail-before new-d">
+                    <input type="text" class="log-input h-input user-input" placeholder="الاسم الاول">                     
+                </div>
+                <div class="form-content mail-before new-d">
+                    <input type="text" class="log-input h-input user-input" placeholder="الاسم الثانى">                     
+                </div>
+                <div class="form-content mail-before new-d">
+                    <input type="text" class="log-input h-input user-input" placeholder="البريد الالكترونى">                     
+                </div>      
+                  <select class="send-drop d-select">
+                    <option value="volvo">اختار الفريق</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <select class="send-drop d-select">
+                    <option value="volvo">اختار الفرع</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>                                                            
+            <br>
+            <button data-remodal-action="confirm" class="remodal-confirm">ارسال</button>        
+            <button data-remodal-action="cancel" class="remodal-cancel">الغاء</button>
+        </div>
+
+        <div class="remodal" data-remodal-id="modal-edit">
+                <div class="form-content mail-before new-d">
+                    <input type="text" class="log-input h-input user-input" placeholder="الاسم الاول">                     
+                </div>  
+                  <select class="send-drop d-select">
+                    <option value="volvo">مدير المبيعات</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <select class="send-drop d-select">
+                    <option value="volvo">اختار الفرع</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>                                                            
+            <br>
+            <button data-remodal-action="confirm" class="remodal-confirm">حفظ</button>        
+            <button data-remodal-action="cancel" class="remodal-cancel">الغاء</button>
+        </div>
+
+        <div class="remodal" data-remodal-id="modal-edit-roles">
+            <div class="in-the-center">
+                <h3 class="center-head-in">تعديل صلاحيات الادارة</h3>
+                <button class="new-block new-block-no" id="opr">
+                    <div class="second-lock">
+                        <h4 class="user-head-nod">عمليات</h4>
+                    </div>
+                </button> 
+                <div class="uder-the-center show opr">
+                    <label class="control control--checkbox the-center-check">صفا فيزا
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة التحركات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">اضافة وظيفة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة الرحلات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check-last">مفتاح الشركة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>                                   
+                </div>             
+                <button class="new-block new-block-no" id="vis">
+                    <div class="second-lock">
+                        <h4 class="user-head-nod">تأشيرات</h4>
+                    </div>
+                </button>  
+                <div class="uder-the-center hide vis">
+                    <label class="control control--checkbox the-center-check">صفا فيزا
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة التحركات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">اضافة وظيفة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة الرحلات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check-last">مفتاح الشركة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>                                   
+                </div>                    
+                <button class="new-block new-block-no" id="count">
+                    <div class="second-lock">
+                        <h4 class="user-head-nod">حسابات</h4>
+                    </div>
+                </button>  
+                <div class="uder-the-center hide count">
+                    <label class="control control--checkbox the-center-check">صفا فيزا
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة التحركات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">اضافة وظيفة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة الرحلات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check-last">مفتاح الشركة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>                                   
+                </div>                    
+                <button class="new-block new-block-no" id="cel">
+                    <div class="second-lock">
+                        <h4 class="user-head-nod">مبيعات</h4>
+                    </div>
+                </button> 
+                <div class="uder-the-center hide cel">
+                    <label class="control control--checkbox the-center-check">صفا فيزا
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة التحركات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">اضافة وظيفة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check">ادارة الرحلات
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox the-center-check-last">مفتاح الشركة
+                         <input type="checkbox" checked="checked"/>
+                         <div class="control__indicator"></div>
+                    </label>                                   
+                </div>                     
+            </div>      
+            <br>
+            <button data-remodal-action="confirm" class="remodal-confirm">حفظ</button>        
+            <button data-remodal-action="cancel" class="remodal-cancel">الغاء</button>
+        </div>
+
+        
+        <script>
+          $( function() {
+            $( "#dialog" ).dialog({
+              autoOpen: false,
+              title: "ارسال دعوة لموظف",
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+         
+            $( "#opener" ).on( "click", function() {
+              $( "#dialog" ).dialog( "open" );
+            });
+          } );
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#sales").click(function(){
+                  $(".support").removeClass('show');
+                  $(".support").addClass('hide');
+                  $(".sales").removeClass('hide');
+                  $(".sales").addClass('show');
+              });
+                $("#support").click(function(){
+                  $(".sales").removeClass('show');
+                  $(".sales").addClass('hide');
+                  $(".support").removeClass('hide');
+                  $(".support").addClass('show');
+              });
+
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#opr").click(function(){
+                  $(".vis, .count , .cel").removeClass('show');
+                  $(".vis, .count , .cel").addClass('hide');
+                  $(".opr").removeClass('hide');
+                  $(".opr").addClass('show');
+              });
+                $("#vis").click(function(){
+                  $(".opr, .count , .cel").removeClass('show');
+                  $(".opr, .count , .cel").addClass('hide');
+                  $(".vis").removeClass('hide');
+                  $(".vis").addClass('show');
+              });
+                $("#count").click(function(){
+                  $(".vis, .opr , .cel").removeClass('show');
+                  $(".vis, .opr , .cel").addClass('hide');
+                  $(".count").removeClass('hide');
+                  $(".count").addClass('show');
+              });
+                $("#cel").click(function(){
+                  $(".vis, .count , .opr").removeClass('show');
+                  $(".vis, .count , .opr").addClass('hide');
+                  $(".cel").removeClass('hide');
+                  $(".cel").addClass('show');
+              });                
+
+            });
+        </script>        
+        <script>
+            $(document).ready(function() {
+                $("#first-branch").click(function(){
+                  $(".support").removeClass('show');
+                  $(".support").addClass('hide');
+                  $(".sales").removeClass('hide');
+                  $(".sales").addClass('show');
+              });
+                $("#second-branch").click(function(){
+                  $(".sales").removeClass('show');
+                  $(".sales").addClass('hide');
+                  $(".support").removeClass('hide');
+                  $(".support").addClass('show');
+              });
+
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $(".first-h").click(function(){
+                  $(".two-h , .three-h").removeClass('show');
+                  $(".two-h , .three-h").addClass('hide');
+                  $(".one-h , .small-nav-head").removeClass('hide');
+                  $(".one-h , .small-nav-head").addClass('show');
+                  $(".third-grop , .second-grop").removeClass('grop-active');
+                  $(".first-grop").addClass('grop-active');                     
+              });
+                $(".second-h").click(function(){
+                  $(".one-h , .three-h , .small-nav-head").removeClass('show');
+                  $(".one-h , .three-h , .small-nav-head").addClass('hide');
+                  $(".two-h").removeClass('hide');
+                  $(".two-h").addClass('show');
+                  $(".first-grop , .third-grop").removeClass('grop-active');
+                  $(".second-grop").addClass('grop-active');                       
+              });
+                $(".third-h").click(function(){
+                  $(".one-h , .two-h , .small-nav-head").removeClass('show');
+                  $(".one-h , .two-h , .small-nav-head").addClass('hide');
+                  $(".three-h").removeClass('hide');
+                  $(".three-h").addClass('show');
+                  $(".first-grop , .second-grop").removeClass('grop-active');
+                  $(".third-grop").addClass('grop-active');          
+              });
+
+
+            });
+        </script> 
