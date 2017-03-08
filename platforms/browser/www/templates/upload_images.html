@@ -29,7 +29,8 @@
                     <img ng-show="image" ng-src="{{image}}" class="upload-img">
                 </div>
             </div>
-            <button class="log-button" ng-click="send()"><span class="the-a">بدأ التحميل</span></button>
+            <button class="log-button" ng-click="send()" ng-show="! process"><span class="the-a">بدأ التحميل</span></button>
+            <button class="log-button"  ng-show="process"><span class="the-a">{{counter}} تم ارسالهم من  {{mutamers}}</span></button>
         </form>
     </div>
 </main>  
