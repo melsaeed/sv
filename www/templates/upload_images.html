@@ -6,21 +6,22 @@
           </div>
           <div class="log-content"> 
               <form class="log-form">
-                <label class="custom-select">            
-                  <select class="send-drop">
-                    <option value="volvo">الحقيبة</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
+                <label class="custom-select">   
+                    <select class="send-drop"  
+                    ng-model="form.case"
+                    ng-options="item as item.Name for item in cases">
+                        <option value='' disabled>الحقيبة</option>
+                    </select>
+            
+                  
                 </label>  
                 <label class="custom-select"> 
-                  <select class="send-drop">
-                    <option value="volvo">العقد</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>   
+                  
+                    <select class="send-drop"
+                            ng-model="form.contract"
+                            ng-options="item as item.Name for item in contracts">
+                        <option value='' disabled>العقد</option>
+                    </select> 
                 </label>               
                   <div class="upload-two">
                       <div class="upload-right">
@@ -36,3 +37,14 @@
           </div>
         </main>  
         
+<style>
+    body, .panel{
+        background: #e0e4e5;
+    }
+    .home-nav{
+        position: static;
+        margin-bottom: 0px;
+    }
+</style>
+
+

@@ -4,6 +4,8 @@ safa.controller("upload_imagesCtrl",function($scope, $location, $http){
 
     $scope.companies = function() {
         //make a payload
+        
+        
         payload = {
             id: $scope.user.company_id + '.' + $scope.user.branch_id,
             token_key: md5(md5($scope.user.company_id + '.' + $scope.user.branch_id))
@@ -29,6 +31,8 @@ safa.controller("upload_imagesCtrl",function($scope, $location, $http){
 
             $scope.contracts = res.data.data;
         });
+
+
 
     };
 
