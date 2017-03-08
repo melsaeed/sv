@@ -14,23 +14,19 @@ safa.config(function ($routeProvider, $httpProvider) {
         
         when('/splash', {
             templateUrl: 'templates/splash.html', 
-            controller: 'splashCtrl',
-            resolve: {access: CheckLogin}
+            controller: 'splashCtrl'
         }).
         when('/login', {
             templateUrl: 'templates/login.html', 
-            controller: 'loginCtrl',
-            resolve: {access: CheckLogin}
+            controller: 'loginCtrl'
         }).
         when('/logout', {
             templateUrl: 'templates/login.html',
-            controller: 'logoutCtrl',
-            resolve: {access: CheckLogin}}).
-        
+            controller: 'logoutCtrl'
+        }).
         when('/forget_pass', {
             templateUrl: 'templates/forget_pass.html', 
-            controller: 'forgetPasswordCtrl',
-            resolve: {access: CheckLogin}
+            controller: 'forgetPasswordCtrl'
         }).
         when('/register', {
             templateUrl: 'templates/registration.html', 
@@ -88,8 +84,6 @@ safa.config(function ($routeProvider, $httpProvider) {
             controller: 'logCtrl',
             resolve: {access: CheckLogin}
         }).
-
-            
         when('/upload_images', {
             templateUrl: 'templates/upload_images.html',
             controller: 'upload_imagesCtrl',
