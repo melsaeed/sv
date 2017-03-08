@@ -25,10 +25,11 @@
                 </label> 
                   <div class="upload-two">
                       <div class="upload-right">
-                          <input type="text" class="log-input h-input up-input" placeholder="اكتب الكلمة هنا">                        
+                          <input ng-model="form.num" type="text" class="log-input h-input up-input" placeholder="اكتب الكلمة هنا">                        
                       </div>
                       <div class="upload-left">
-                          <img src="images/safa-12.jpg" class="upload-img">
+                          <i ng-show="!image" class="fa fa-spin fa-spinner fa-3x"></i>
+                          <img ng-show="image" ng-src="{{image}}" class="upload-img">
                       </div>
 
                   </div>

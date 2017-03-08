@@ -35,10 +35,11 @@ safa.controller("upload_imagesCtrl",function($scope, $location, $http){
 
         $http({
             url: 'http://offline.safavisa.com/MOFA/remote_captcha',
-            method: 'get',
-            data: {token: window.localStorage.getItem("token")}
+            method: 'post',
+            data: $.param({token: window.localStorage.getItem("token")}),
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).then(function(res){
-            console.log(res.data);
+            $scope.image = (res.data.file['0']);
         });
 
     };
