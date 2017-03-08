@@ -31,6 +31,8 @@ safa.controller('loginCtrl', function ($scope, $http, $location, $cookies) {
         });
         
         
+        
+        
 //        $http({
 //            url: api_url + 'auth/login',
 //            withCredentials: true,

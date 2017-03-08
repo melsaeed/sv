@@ -22,7 +22,7 @@
                             ng-options="item as item.Name for item in contracts">
                         <option value='' disabled>العقد</option>
                     </select> 
-                </label>               
+                </label> 
                   <div class="upload-two">
                       <div class="upload-right">
                           <input type="text" class="log-input h-input up-input" placeholder="اكتب الكلمة هنا">                        
@@ -32,7 +32,7 @@
                       </div>
 
                   </div>
-                  <button class="log-button"><a href="#" class="the-a">بدأ التحميل</a></button>
+                  <button class="log-button" ng-click="send()"><span class="the-a">بدأ التحميل</span></button>
               </form>
           </div>
         </main>  

@@ -1,8 +1,9 @@
 safa.controller("upload_imagesCtrl",function($scope, $location, $http){
     $scope.MainTitle = 'تحميل الصور';
     $scope.user = JSON.parse(window.localStorage.getItem('user'));
+    $scope.ready = false;
 
-    $scope.companies = function() {
+    $scope.start = function() {
         //make a payload
         
         
@@ -32,14 +33,26 @@ safa.controller("upload_imagesCtrl",function($scope, $location, $http){
             $scope.contracts = res.data.data;
         });
 
-
+        $http({
+            url: 'http://offline.safavisa.com/MOFA/remote_captcha',
+            method: 'get',
+            data: {token: window.localStorage.getItem("token")}
+        }).then(function(res){
+            console.log(res.data);
+        });
 
     };
-
-    $scope.companies();
 
     $scope.send = function() {
-        alert("Have nothing to do");
+        
+        
+        
+        
+       
+        
     };
+    
+    $scope.start();
+
 
 });
