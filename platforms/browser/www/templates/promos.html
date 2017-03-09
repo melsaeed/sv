@@ -7,7 +7,6 @@
         right: 0; 
     }
     .before-space{
-        margin-right: 0;
     }
     .activity-container{
         /*overflow:hidden;*/
@@ -16,7 +15,7 @@
     }
     .scroll{
         overflow-y: scroll;
-        height: 100vh;
+        height: calc(100vh - 90px);
     }
     .panel{
         background: #e0e4e5;
@@ -121,7 +120,7 @@
         <div class="show two-of scroll">
 
             <div ng-repeat="item in draw('1')" style="margin-bottom: 10px;" last="last">
-                <div class="before-space">
+                <div class="">
                     <div class="offer-space first-offer">
                         <div class="the-hotel">
                             <div class="hotel-im">

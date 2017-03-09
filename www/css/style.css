@@ -2492,7 +2492,7 @@ border: 1px solid #c5c5c5;
     animation: cwSpin .666s linear .2s infinite;
 }
 #panel-splash {
-    padding-top: 158px;
+    padding-top: 80px;
     margin-bottom: 118px;   
 }
 .search-small {
@@ -2614,7 +2614,7 @@ border: 1px solid #c5c5c5;
 }
 .first-offer {
     margin-top: 15px;
-
+    margin-right: 13px;
 }
 .room-nu-white-offer {
     width: 15%;

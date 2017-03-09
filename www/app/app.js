@@ -31,7 +31,6 @@ safa.config(function ($routeProvider, $httpProvider) {
         when('/register', {
             templateUrl: 'templates/registration.html', 
             controller: 'registrationCtrl',
-            resolve: {access: CheckLogin}
         }).
         when('/dashboard', {
             templateUrl: 'templates/dashboard.html', 
