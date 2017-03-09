@@ -120,7 +120,7 @@
 
         <div class="show two-of scroll">
 
-            <div ng-repeat="item in draw('1')" style="margin-bottom: 10px;" last>
+            <div ng-repeat="item in draw('1')" style="margin-bottom: 10px;" last="last">
                 <div class="before-space">
                     <div class="offer-space first-offer">
                         <div class="the-hotel">
@@ -328,12 +328,7 @@
                 }
                 this.createStars();
                 this.syncRating();
-                this.$el.on('mouseover.starrr', 'i', function (e) {
-                    return _this.syncRating(_this.$el.find('i').index(e.currentTarget) + 1);
-                });
-                this.$el.on('mouseout.starrr', function () {
-                    return _this.syncRating();
-                });
+                
                 this.$el.on('click.starrr', 'i', function (e) {
                     return _this.setRating(_this.$el.find('i').index(e.currentTarget) + 1);
                 });
@@ -401,14 +396,14 @@
         });
     })(window.jQuery, window);
 
-safa.directive('last', function() {
-    return function(scope) {
-        if (scope.$last){
-            $(".starrr").starrr();
-        }
-    };
-});
-        
+
+    $(document).ready(function(){
+
+        setTimeout(function(){
+          $(".starrr").starrr();
+        }, 2000);  
+      
+    }); 
         
    
 </script>   
