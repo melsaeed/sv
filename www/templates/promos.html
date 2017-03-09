@@ -120,7 +120,7 @@
 
         <div class="show two-of scroll">
 
-            <div ng-repeat="item in draw('1')" style="margin-bottom: 10px;">
+            <div ng-repeat="item in draw('1')" style="margin-bottom: 10px;" last>
                 <div class="before-space">
                     <div class="offer-space first-offer">
                         <div class="the-hotel">
@@ -133,7 +133,7 @@
                                 <h5 class="user-head-three">{{item.company.country.name}}</h5>
                             </div>
                             <div class="hotel-st">
-                                <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                                <div id="stars-existing" class="starrr" data-rating='{{item.content.content_hotel.company_hotel.class}}'></div> 
                             </div>
                             <div class="clear"></div>
 
@@ -401,20 +401,16 @@
         });
     })(window.jQuery, window);
 
-    $(function () {
-        return $(".starrr").starrr();
-    });
-
-    $(document).ready(function () {
-
-        $('#stars').on('starrr:change', function (e, value) {
-            $('#count').html(value);
-        });
-
-        $('#stars-existing').on('starrr:change', function (e, value) {
-            $('#count-existing').html(value);
-        });
-    });
+safa.directive('last', function() {
+    return function(scope) {
+        if (scope.$last){
+            $(".starrr").starrr();
+        }
+    };
+});
+        
+        
+   
 </script>   
 <script>
     $(document).ready(function () {

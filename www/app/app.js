@@ -64,7 +64,7 @@ safa.config(function ($routeProvider, $httpProvider) {
             controller: 'promosCtrl',
             resolve: {access: CheckLogin}
         }).
-        when('/promoDetails', {
+        when('/promoDetails/:id', {
             templateUrl: 'templates/promoDetails.html', 
             controller: 'promoDetailsCtrl',
             resolve: {access: CheckLogin}
