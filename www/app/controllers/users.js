@@ -19,7 +19,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     /**
      * PROFILE INFO
      **/
-    $http.get(api_url + "profile").then(function (response) {
+    $http.get(api_url + "profile?token="+window.localStorage.getItem("token")).then(function (response) {
         if (response.error) {
             $location.path("/login");
         }
@@ -28,14 +28,14 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
         loading.stop();
         $scope.user = response.data.user;
         $scope.genders = genders;
-        $('select[name=gender]').val(response.data.user.info.gender);
+//        $('select[name=gender]').val(response.data.user.info.gender);
 
         $http({
-            url: api_url + 'company/groups/' + $scope.user.default_company_id,
+            url: api_url + 'company/groups/' + $scope.user.default_company_id+'?token='+window.localStorage.getItem("token"),
             method: 'GET',
         }).then(function (response) {
             if (response.data.error)
-                error.fire(response.data.message);
+                alert(response.data.message);
             else {
                 $scope.groups = response.data.groups;
                 $scope.users1_group_id = $scope.groups[0];
@@ -66,7 +66,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     $scope.user_status1 = function (idx) {
         if ($scope.key.users[idx].deactivated == 0) {
             $http({
-                url: api_url + 'key/status',
+                url: api_url + 'key/status?token='+window.localStorage.getItem("token"),
                 data: {user_id: $scope.key.users[idx].user_id, status: 1},
                 method: 'POST'
             }).then(function (res) {
@@ -74,7 +74,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
             });
         } else {
             $http({
-                url: api_url + 'key/status',
+                url: api_url + 'key/status?token='+window.localStorage.getItem("token"),
                 data: {user_id: $scope.key.users[idx].user_id, status: 0},
                 method: 'POST'
             }).then(function (res) {
@@ -85,7 +85,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
 
     $scope.addToGroup1 = function () {
         $http({
-            url: api_url + 'key/accept',
+            url: api_url + 'key/accept?token='+window.localStorage.getItem("token"),
             data: {company_user_request_id: $scope.sm1, group_id: $scope.users1_group_id.company_group_id},
             method: "POST"
         }).then(function (res) {
@@ -106,7 +106,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      * GETTING KEY INFO
      **/
     $http({
-        url: api_url + 'key',
+        url: api_url + 'key?token='+window.localStorage.getItem("token"),
         method: 'GET',
     }).then(function (response) {
         if (response.data.error)
@@ -120,7 +120,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      * COMPANY INVITATIONS
      **/
     $http({
-        url: api_url + 'userinvitation/companyinvitations',
+        url: api_url + 'userinvitation/companyinvitations?token='+window.localStorage.getItem("token"),
         method: 'GET',
     }).then(function (response) {
         if (response.data.error)
@@ -131,10 +131,10 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     });
 
     $scope.delete_request = function (idx) {
-        areyousure = confirm("?? ??? ???? ??? ???? ??????");
+        areyousure = confirm("هل انت متأكد انك تريد الحذف ");
         if (areyousure) {
             $http({
-                url: api_url + 'userinvitation/companydeleteinvitation',
+                url: api_url + 'userinvitation/companydeleteinvitation?token='+window.localStorage.getItem("token"),
                 data: {user_id: $scope.invitations.outgoing[idx].user_id},
                 method: "POST"
             }).then(function (res) {
@@ -160,7 +160,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
 
     $scope._userInvitation = function () {
         $http({
-            url: api_url + 'userinvitation/companyinvite',
+            url: api_url + 'userinvitation/companyinvite?token='+window.localStorage.getItem("token"),
             data: {email: [$scope.userEmail], company_group_id: $scope.popup_group_id},
             method: "POST"
         }).then(function (res) {
@@ -178,7 +178,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
 
     $scope._delete_group = function () {
         $http({
-            url: api_url + 'key/removegroup',
+            url: api_url + 'key/removegroup?token='+window.localStorage.getItem("token"),
             data: {
                 company_group_id: $scope.key.company.group[$scope.deletetedGroupIdx].company_group_id,
             },
@@ -195,7 +195,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     $scope.delete_user = function () {
 
         $http({
-            url: api_url + 'user/permanently/' + $scope.key.users[$scope.DELETE_USER_IDX].user_id,
+            url: api_url + 'user/permanently/' + $scope.key.users[$scope.DELETE_USER_IDX].user_id +'?token='+window.localStorage.getItem("token"),
             method: "DELETE"
         }).then(function (res) {
             $scope.key.users.splice($scope.DELETE_USER_IDX, 1);
@@ -243,7 +243,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
             $user_idz.push(x.user_id);
         });
         $http({
-            url: api_url + 'userinvitation/companyaccept',
+            url: api_url + 'userinvitation/companyaccept?token='+window.localStorage.getItem("token"),
             data: {
                 user_id: $user_idz,
                 company_group_id: $rootScope.popup_group_id
@@ -263,7 +263,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
             $user_idz.push(x.user_id);
         });
         $http({
-            url: api_url + 'userinvitation/companyreject',
+            url: api_url + 'userinvitation/companyreject?token='+window.localStorage.getItem("token"),
             data: {user_id: $user_idz},
             method: "POST"
         }).then(function (res) {
@@ -283,7 +283,7 @@ safa.controller('create_groupCtrl', function ($scope, $rootScope, $http, $locati
     $scope.srcenz = Array();
 
     $http({
-        url: api_url + 'screen/display',
+        url: api_url + 'screen/display?token='+window.localStorage.getItem("token"),
         method: "GET"
     }).then(function (res) {
         $scope.screens = res.data;
@@ -311,7 +311,7 @@ safa.controller('create_groupCtrl', function ($scope, $rootScope, $http, $locati
         });
 
         $http({
-            url: api_url + 'key/acceptnew',
+            url: api_url + 'key/acceptnew?token='+window.localStorage.getItem("token"),
             data: {group_name: $rootScope.newGroupName, screen: $scope.srcenz},
             method: "POST"
         }).then(function (res) {
@@ -346,7 +346,7 @@ safa.controller('edit_groupCtrl', function ($scope, $rootScope, $http, $location
     $scope.statusOfPermissionWindow = 1;
 
     $http({
-        url: api_url + 'screen/display',
+        url: api_url + 'screen/display?token='+window.localStorage.getItem("token"),
         method: "GET"
     }).then(function (res) {
         $scope.screens = res.data;
@@ -360,7 +360,7 @@ safa.controller('edit_groupCtrl', function ($scope, $rootScope, $http, $location
         });
 
         $http({
-            url: api_url + 'group/load/' + $routeParams.id,
+            url: api_url + 'group/load/' + $routeParams.id+'?token='+window.localStorage.getItem("token"),
             method: "GET"
         }).then(function (res) {
             $rootScope.newGroupName = res.data.group.name;
@@ -409,7 +409,7 @@ safa.controller('edit_groupCtrl', function ($scope, $rootScope, $http, $location
             return x.screen_id;
         });
         $http({
-            url: api_url + 'key/editgroup',
+            url: api_url + 'key/editgroup?token='+window.localStorage.getItem("token"),
             data: {
                 groupid: $routeParams.id,
                 group_name: $rootScope.newGroupName,

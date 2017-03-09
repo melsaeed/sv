@@ -117,7 +117,7 @@ safa.run(['$http', function ($http, $cookies) {
     $http.defaults.withCredentials = true;
 //    if(typeof token != 'undefined' && token != '')
 //    if ($cookies.get('token'))
-//        $http.defaults.headers.common['X-Auth-Token'] = $cookies.get('token');
+        $http.defaults.headers.common['X-Auth-Token'] = window.localStorage.getItem("token");
 //    else
 //        $http.defaults.headers.common['X-Auth-Token'] = window._token;
 

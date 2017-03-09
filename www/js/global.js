@@ -53,7 +53,7 @@ error = {
             + '  </div>'
             + ' </div>'
         );
-        $("#myModal" + $counter).modal('show');
+//        $("#myModal" + $counter).modal('show');
         return false;
     }
 };
