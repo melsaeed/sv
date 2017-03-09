@@ -1,796 +1,818 @@
 <div ng-include="'templates/header.html'"></div>
+<style>
+    .home-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
 
-
+    }
+    .before-space{
+        margin-right: 0;
+    }
+    .activity-container{
+        /*overflow:hidden;*/
+        /*margin-top: 170px;*/
+        padding-top: 40px;
+    }
+</style>
 <main id="panel" class="panel">   
     <div class="home-nav details-nav">
         <div class="to-left">
-            <a href="#" class="nav-head small-nav-head"><i class="fa fa-search" aria-hidden="true"></i></a>
+<!--            <a href="#" class="nav-head small-nav-head"><i class="fa fa-search" aria-hidden="true"></i></a>
             <a href="#" class="nav-head small-nav-head"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i></a>
             <div class="slide-list">
                 <ul class="slide-list-ul">
                     <li class="slide-list-li xp"><a class="the-last-a" href="#">الأقل سعرا</a></li>
                     <li class="slide-list-li"><a class="the-last-a" href="#">الأقرب للحرم</a></li>
                 </ul>
-            </div>
+            </div>-->
         </div>
         <div class="to-right">
-             <a href="javascript:void(0)" class="nav-btn js-slideout-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                <h3 class="nav-head">{{MainTitle}}</h3>               
+            <a href="javascript:void(0)" class="nav-btn js-slideout-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <h3 class="nav-head">{{MainTitle}}</h3>               
         </div>
     </div>
-    <div class="clear"></div>
-    <div class="three-groups">
-        <div class="first-grop ">
-            <a href="#" class="first-h first-of"><i class="fa fa-bus" aria-hidden="true"></i></a>
-        </div>
-        <div class="second-grop grop-active">
-            <a href="#" class="second-h second-of"><i class="fa fa-hospital-o" aria-hidden="true"></i></a>
-        </div>
-        <div class="third-grop">
-            <a href="#" class="third-h third-of"><i class="fa fa-plane" aria-hidden="true"></i></a>
-        </div>            
-    </div>   
-    <div class="hide one-of">
-        <div class="clear"></div>
-        <div class="before-space">
-            <div class="offer-space first-offer">
-                <div class="the-hotel">
-                    <div class="hotel-im">
-                        <img src="images/safa-4.jpg" class="hotel-im-in">
-                    </div>
-                    <div class="hotel-na">
-                        <h4 class="user-head-one">احمد محمد محمود</h4>
-                        <h5 class="user-head-two">مدير المبيعات</h5>
-                        <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                    </div>
-                    <div class="hotel-st">
-                     <div id="stars-existing" class="starrr" data-rating='4'></div> 
-                 </div>
-                 <div class="clear"></div>
-                 <div class="rooms my-padding">
-                    <div class="room-nu room-nu-first">
-                        <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>
-                    <div class="room-nu">
-                        2x <i class="fa fa-male" aria-hidden="true"></i> 
-                    </div>
-                    <div class="room-nu">
-                        3x <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>
-                    <div class="room-nu">
-                        4x <i class="fa fa-male" aria-hidden="true"></i> 
-                    </div>
-                    <div class="room-nu">
-                        5x <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>
-                    <div class="room-nu room-nu-last">
-                        6x <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>                    
-                </div>
-                <div class="clear"></div>                
-                <div class="rooms-white my-padding">
-                    <div class="room-nu-white-offer room-nu-first-white">
-                        <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>
-                    <div class="room-nu-white-offer">
-                        2x <i class="fa fa-male" aria-hidden="true"></i> 
-                    </div>
-                    <div class="room-nu-white-offer">
-                        3x <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>
-                    <div class="room-nu-white-offer">
-                        4x <i class="fa fa-male" aria-hidden="true"></i> 
-                    </div>
-                    <div class="room-nu-white-offer">
-                        5x <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>
-                    <div class="room-nu-white-offer room-nu-last-white">
-                        6x <i class="fa fa-male" aria-hidden="true"></i>
-                    </div>                    
+
+    <div class="activity-container">
+
+        <div class="three-groups">
+            <div class="first-grop ">
+                <a href="javascript:void(0)" class="first-h first-of"><i class="fa fa-bus" aria-hidden="true"></i></a>
+            </div>
+            <div class="second-grop grop-active">
+                <a href="javascript:void(0)" class="second-h second-of"><i class="fa fa-hospital-o" aria-hidden="true"></i></a>
+            </div>
+            <div class="third-grop">
+                <a href="javascript:void(0)" class="third-h third-of"><i class="fa fa-plane" aria-hidden="true"></i></a>
+            </div>            
+        </div>   
+        <div class="hide one-of">
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space first-offer">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="hotel-st">
+                            <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu room-nu-last">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>                
+                    </div>                  
                 </div>                
-            </div>                  
-        </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                        </div>
+                        <div class="hotel-st price-st">
+                            <div class="space-price">
+                                <div class="price-img">
+                                    <img src="images/safa-105.png" class="price-img-in">
+                                    <div class="pricing">
+                                        <h4 class="price-head">يبدأ من</h4> <br>
+                                        <h4 class="price-head">85$</h4>
+                                    </div>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first room-nu-first-space ">
+                                العروض
+                            </div>
+                            <div class="room-nu room-nu-last room-nu-last-space">
+                                ماركات الباصات
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white room-nu-first-space-white">
+                                5                            
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white room-nu-last-space">
+                                <img src="images/safa-100.png" class="space-img">
+                                <img src="images/safa-101.png" class="space-img">
+                                <img src="images/safa-102.png" class="space-img">
+                                <img src="images/safa-104.png" class="space-img">
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na space-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <div class="three-color-btns-small">
+                                <div class="color-btns">
+                                    <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>
+                                    <button class="the-defult">50</button>
+                                </div>                             
+                            </div> 
+                        </div>
+                        <div class="hotel-st color-st">
+                            <div class="three-color-btns">
+                                <div class="color-btns">
+                                    <button class="th-color the-greeen">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="color-btns">
+                                    <button class="th-color the-blue">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>                    
+                                <div class="color-btns">
+                                    <button class="th-color the-blue">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="color-btns">
+                                    <button class="th-color the-red">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>                                
+                            </div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first fist-st">
+                                بالغ
+                            </div>
+                            <div class="room-nu second-st">
+                                طفل
+                            </div>
+                            <div class="room-nu room-nu-last third-st">
+                                رضيع
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white fist-st">
+                                300
+                            </div>
+                            <div class="room-nu-white-offer second-st">
+                                200
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white third-st">
+                                100
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="hotel-st">
+                            <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu room-nu-last">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>                              
+        </div>         
+        <div class="show two-of">
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space first-offer">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="hotel-st">
+                            <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu room-nu-last">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                        </div>
+                        <div class="hotel-st price-st">
+                            <div class="space-price">
+                                <div class="price-img">
+                                    <img src="images/safa-105.png" class="price-img-in">
+                                    <div class="pricing">
+                                        <h4 class="price-head">يبدأ من</h4> <br>
+                                        <h4 class="price-head">85$</h4>
+                                    </div>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first room-nu-first-space ">
+                                العروض
+                            </div>
+                            <div class="room-nu room-nu-last room-nu-last-space">
+                                ماركات الباصات
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white room-nu-first-space-white">
+                                5                            
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white room-nu-last-space">
+                                <img src="images/safa-100.png" class="space-img">
+                                <img src="images/safa-101.png" class="space-img">
+                                <img src="images/safa-102.png" class="space-img">
+                                <img src="images/safa-104.png" class="space-img">
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na space-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <div class="three-color-btns-small">
+                                <div class="color-btns">
+                                    <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>
+                                    <button class="the-defult">50</button>
+                                </div>                             
+                            </div> 
+                        </div>
+                        <div class="hotel-st color-st">
+                            <div class="three-color-btns">
+                                <div class="color-btns">
+                                    <button class="th-color the-greeen">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="color-btns">
+                                    <button class="th-color the-blue">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>                    
+                                <div class="color-btns">
+                                    <button class="th-color the-blue">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="color-btns">
+                                    <button class="th-color the-red">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>                                
+                            </div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first fist-st">
+                                بالغ
+                            </div>
+                            <div class="room-nu second-st">
+                                طفل
+                            </div>
+                            <div class="room-nu room-nu-last third-st">
+                                رضيع
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white fist-st">
+                                300
+                            </div>
+                            <div class="room-nu-white-offer second-st">
+                                200
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white third-st">
+                                100
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="hotel-st">
+                            <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu room-nu-last">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>                              
+        </div> 
+        <div class="hide three-of">
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space first-offer">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="hotel-st">
+                            <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu room-nu-last">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                        </div>
+                        <div class="hotel-st price-st">
+                            <div class="space-price">
+                                <div class="price-img">
+                                    <img src="images/safa-105.png" class="price-img-in">
+                                    <div class="pricing">
+                                        <h4 class="price-head">يبدأ من</h4> <br>
+                                        <h4 class="price-head">85$</h4>
+                                    </div>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first room-nu-first-space ">
+                                العروض
+                            </div>
+                            <div class="room-nu room-nu-last room-nu-last-space">
+                                ماركات الباصات
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white room-nu-first-space-white">
+                                5                            
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white room-nu-last-space">
+                                <img src="images/safa-100.png" class="space-img">
+                                <img src="images/safa-101.png" class="space-img">
+                                <img src="images/safa-102.png" class="space-img">
+                                <img src="images/safa-104.png" class="space-img">
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na space-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <div class="three-color-btns-small">
+                                <div class="color-btns">
+                                    <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>
+                                    <button class="the-defult">50</button>
+                                </div>                             
+                            </div> 
+                        </div>
+                        <div class="hotel-st color-st">
+                            <div class="three-color-btns">
+                                <div class="color-btns">
+                                    <button class="th-color the-greeen">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="color-btns">
+                                    <button class="th-color the-blue">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>                    
+                                <div class="color-btns">
+                                    <button class="th-color the-blue">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="color-btns">
+                                    <button class="th-color the-red">CAI-JED</button>
+                                    <button class="the-defult">10/3/2017</button>
+                                </div>                                
+                            </div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first fist-st">
+                                بالغ
+                            </div>
+                            <div class="room-nu second-st">
+                                طفل
+                            </div>
+                            <div class="room-nu room-nu-last third-st">
+                                رضيع
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white fist-st">
+                                300
+                            </div>
+                            <div class="room-nu-white-offer second-st">
+                                200
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white third-st">
+                                100
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>
+            <div class="clear"></div>
+            <div class="before-space">
+                <div class="offer-space">
+                    <div class="the-hotel">
+                        <div class="hotel-im">
+                            <img src="images/safa-4.jpg" class="hotel-im-in">
+                        </div>
+                        <div class="hotel-na">
+                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h5 class="user-head-two">مدير المبيعات</h5>
+                            <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                        </div>
+                        <div class="hotel-st">
+                            <div id="stars-existing" class="starrr" data-rating='4'></div> 
+                        </div>
+                        <div class="clear"></div>
+                        <div class="rooms my-padding">
+                            <div class="room-nu room-nu-first">
+                                <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                2x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                3x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu">
+                                4x <i class="fa fa-male" aria-hidden="true"></i> 
+                            </div>
+                            <div class="room-nu">
+                                5x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>
+                            <div class="room-nu room-nu-last">
+                                6x <i class="fa fa-male" aria-hidden="true"></i>
+                            </div>                    
+                        </div>
+                        <div class="clear"></div>                
+                        <div class="rooms-white my-padding">
+                            <div class="room-nu-white-offer room-nu-first-white">
+                                100
+                            </div>
+                            <div class="room-nu-white-offer">
+                                200 
+                            </div>
+                            <div class="room-nu-white-offer">
+                                300
+                            </div>
+                            <div class="room-nu-white-offer">
+                                400
+                            </div>
+                            <div class="room-nu-white-offer">
+                                500
+                            </div>
+                            <div class="room-nu-white-offer room-nu-last-white">
+                                600
+                            </div>                    
+                        </div>                
+                    </div>                  
+                </div>                
+            </div>                              
+        </div>
     </div>
-    <div class="clear"></div>
-    <div class="before-space">
-        <div class="offer-space">
-            <div class="the-hotel">
-                <div class="hotel-im">
-                    <img src="images/safa-4.jpg" class="hotel-im-in">
-                </div>
-                <div class="hotel-na">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                </div>
-                <div class="hotel-st price-st">
-                 <div class="space-price">
-                     <div class="price-img">
-                         <img src="images/safa-105.png" class="price-img-in">
-                         <div class="pricing">
-                             <h4 class="price-head">يبدأ من</h4> <br>
-                             <h4 class="price-head">85$</h4>
-                         </div>
-
-                     </div>
-                 </div> 
-             </div>
-             <div class="clear"></div>
-             <div class="rooms my-padding">
-                <div class="room-nu room-nu-first room-nu-first-space ">
-                    العروض
-                </div>
-                <div class="room-nu room-nu-last room-nu-last-space">
-                    ماركات الباصات
-                </div>                    
-            </div>
-            <div class="clear"></div>                
-            <div class="rooms-white my-padding">
-                <div class="room-nu-white-offer room-nu-first-white room-nu-first-space-white">
-                    5                            
-                </div>
-                <div class="room-nu-white-offer room-nu-last-white room-nu-last-space">
-                    <img src="images/safa-100.png" class="space-img">
-                    <img src="images/safa-101.png" class="space-img">
-                    <img src="images/safa-102.png" class="space-img">
-                    <img src="images/safa-104.png" class="space-img">
-                </div>                    
-            </div>                
-        </div>                  
-    </div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na space-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <div class="three-color-btns-small">
-                    <div class="color-btns">
-                        <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>
-                        <button class="the-defult">50</button>
-                    </div>                             
-                </div> 
-            </div>
-            <div class="hotel-st color-st">
-             <div class="three-color-btns">
-                <div class="color-btns">
-                    <button class="th-color the-greeen">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>
-                <div class="color-btns">
-                    <button class="th-color the-blue">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>                    
-                <div class="color-btns">
-                    <button class="th-color the-blue">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>
-                <div class="color-btns">
-                    <button class="th-color the-red">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>                                
-            </div> 
-        </div>
-        <div class="clear"></div>
-        <div class="rooms my-padding">
-            <div class="room-nu room-nu-first fist-st">
-                بالغ
-            </div>
-            <div class="room-nu second-st">
-                طفل
-            </div>
-            <div class="room-nu room-nu-last third-st">
-                رضيع
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white fist-st">
-                300
-            </div>
-            <div class="room-nu-white-offer second-st">
-                200
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white third-st">
-                100
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <h5 class="user-head-two">مدير المبيعات</h5>
-                <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-            </div>
-            <div class="hotel-st">
-             <div id="stars-existing" class="starrr" data-rating='4'></div> 
-         </div>
-         <div class="clear"></div>
-         <div class="rooms my-padding">
-            <div class="room-nu room-nu-first">
-                <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu">
-                2x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu">
-                3x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu">
-                4x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu">
-                5x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu room-nu-last">
-                6x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white">
-                <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu-white-offer">
-                2x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu-white-offer">
-                3x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu-white-offer">
-                4x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu-white-offer">
-                5x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white">
-                6x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>                              
-</div>         
-<div class="show two-of">
-    <div class="clear"></div>
-    <div class="before-space">
-        <div class="offer-space first-offer">
-            <div class="the-hotel">
-                <div class="hotel-im">
-                    <img src="images/safa-4.jpg" class="hotel-im-in">
-                </div>
-                <div class="hotel-na">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="hotel-st">
-                 <div id="stars-existing" class="starrr" data-rating='4'></div> 
-             </div>
-             <div class="clear"></div>
-             <div class="rooms my-padding">
-                <div class="room-nu room-nu-first">
-                    <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu">
-                    2x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu">
-                    3x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu">
-                    4x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu">
-                    5x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu room-nu-last">
-                    6x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>                    
-            </div>
-            <div class="clear"></div>                
-            <div class="rooms-white my-padding">
-                <div class="room-nu-white-offer room-nu-first-white">
-                    <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu-white-offer">
-                    2x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu-white-offer">
-                    3x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu-white-offer">
-                    4x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu-white-offer">
-                    5x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu-white-offer room-nu-last-white">
-                    6x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>                    
-            </div>                
-        </div>                  
-    </div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <h5 class="user-head-two">مدير المبيعات</h5>
-            </div>
-            <div class="hotel-st price-st">
-             <div class="space-price">
-                 <div class="price-img">
-                     <img src="images/safa-105.png" class="price-img-in">
-                     <div class="pricing">
-                         <h4 class="price-head">يبدأ من</h4> <br>
-                         <h4 class="price-head">85$</h4>
-                     </div>
-
-                 </div>
-             </div> 
-         </div>
-         <div class="clear"></div>
-         <div class="rooms my-padding">
-            <div class="room-nu room-nu-first room-nu-first-space ">
-                العروض
-            </div>
-            <div class="room-nu room-nu-last room-nu-last-space">
-                ماركات الباصات
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white room-nu-first-space-white">
-                5                            
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white room-nu-last-space">
-                <img src="images/safa-100.png" class="space-img">
-                <img src="images/safa-101.png" class="space-img">
-                <img src="images/safa-102.png" class="space-img">
-                <img src="images/safa-104.png" class="space-img">
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na space-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <div class="three-color-btns-small">
-                    <div class="color-btns">
-                        <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>
-                        <button class="the-defult">50</button>
-                    </div>                             
-                </div> 
-            </div>
-            <div class="hotel-st color-st">
-             <div class="three-color-btns">
-                <div class="color-btns">
-                    <button class="th-color the-greeen">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>
-                <div class="color-btns">
-                    <button class="th-color the-blue">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>                    
-                <div class="color-btns">
-                    <button class="th-color the-blue">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>
-                <div class="color-btns">
-                    <button class="th-color the-red">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>                                
-            </div> 
-        </div>
-        <div class="clear"></div>
-        <div class="rooms my-padding">
-            <div class="room-nu room-nu-first fist-st">
-                بالغ
-            </div>
-            <div class="room-nu second-st">
-                طفل
-            </div>
-            <div class="room-nu room-nu-last third-st">
-                رضيع
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white fist-st">
-                300
-            </div>
-            <div class="room-nu-white-offer second-st">
-                200
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white third-st">
-                100
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <h5 class="user-head-two">مدير المبيعات</h5>
-                <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-            </div>
-            <div class="hotel-st">
-             <div id="stars-existing" class="starrr" data-rating='4'></div> 
-         </div>
-         <div class="clear"></div>
-         <div class="rooms my-padding">
-            <div class="room-nu room-nu-first">
-                <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu">
-                2x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu">
-                3x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu">
-                4x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu">
-                5x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu room-nu-last">
-                6x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white">
-                <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu-white-offer">
-                2x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu-white-offer">
-                3x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu-white-offer">
-                4x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu-white-offer">
-                5x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white">
-                6x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>                              
-</div> 
-<div class="hide three-of">
-    <div class="clear"></div>
-    <div class="before-space">
-        <div class="offer-space first-offer">
-            <div class="the-hotel">
-                <div class="hotel-im">
-                    <img src="images/safa-4.jpg" class="hotel-im-in">
-                </div>
-                <div class="hotel-na">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="hotel-st">
-                 <div id="stars-existing" class="starrr" data-rating='4'></div> 
-             </div>
-             <div class="clear"></div>
-             <div class="rooms my-padding">
-                <div class="room-nu room-nu-first">
-                    <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu">
-                    2x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu">
-                    3x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu">
-                    4x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu">
-                    5x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu room-nu-last">
-                    6x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>                    
-            </div>
-            <div class="clear"></div>                
-            <div class="rooms-white my-padding">
-                <div class="room-nu-white-offer room-nu-first-white">
-                    <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu-white-offer">
-                    2x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu-white-offer">
-                    3x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu-white-offer">
-                    4x <i class="fa fa-male" aria-hidden="true"></i> 
-                </div>
-                <div class="room-nu-white-offer">
-                    5x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>
-                <div class="room-nu-white-offer room-nu-last-white">
-                    6x <i class="fa fa-male" aria-hidden="true"></i>
-                </div>                    
-            </div>                
-        </div>                  
-    </div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <h5 class="user-head-two">مدير المبيعات</h5>
-            </div>
-            <div class="hotel-st price-st">
-             <div class="space-price">
-                 <div class="price-img">
-                     <img src="images/safa-105.png" class="price-img-in">
-                     <div class="pricing">
-                         <h4 class="price-head">يبدأ من</h4> <br>
-                         <h4 class="price-head">85$</h4>
-                     </div>
-
-                 </div>
-             </div> 
-         </div>
-         <div class="clear"></div>
-         <div class="rooms my-padding">
-            <div class="room-nu room-nu-first room-nu-first-space ">
-                العروض
-            </div>
-            <div class="room-nu room-nu-last room-nu-last-space">
-                ماركات الباصات
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white room-nu-first-space-white">
-                5                            
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white room-nu-last-space">
-                <img src="images/safa-100.png" class="space-img">
-                <img src="images/safa-101.png" class="space-img">
-                <img src="images/safa-102.png" class="space-img">
-                <img src="images/safa-104.png" class="space-img">
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na space-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <div class="three-color-btns-small">
-                    <div class="color-btns">
-                        <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>
-                        <button class="the-defult">50</button>
-                    </div>                             
-                </div> 
-            </div>
-            <div class="hotel-st color-st">
-             <div class="three-color-btns">
-                <div class="color-btns">
-                    <button class="th-color the-greeen">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>
-                <div class="color-btns">
-                    <button class="th-color the-blue">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>                    
-                <div class="color-btns">
-                    <button class="th-color the-blue">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>
-                <div class="clear"></div>
-                <div class="color-btns">
-                    <button class="th-color the-red">CAI-JED</button>
-                    <button class="the-defult">10/3/2017</button>
-                </div>                                
-            </div> 
-        </div>
-        <div class="clear"></div>
-        <div class="rooms my-padding">
-            <div class="room-nu room-nu-first fist-st">
-                بالغ
-            </div>
-            <div class="room-nu second-st">
-                طفل
-            </div>
-            <div class="room-nu room-nu-last third-st">
-                رضيع
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white fist-st">
-                300
-            </div>
-            <div class="room-nu-white-offer second-st">
-                200
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white third-st">
-                100
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>
-<div class="clear"></div>
-<div class="before-space">
-    <div class="offer-space">
-        <div class="the-hotel">
-            <div class="hotel-im">
-                <img src="images/safa-4.jpg" class="hotel-im-in">
-            </div>
-            <div class="hotel-na">
-                <h4 class="user-head-one">احمد محمد محمود</h4>
-                <h5 class="user-head-two">مدير المبيعات</h5>
-                <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-            </div>
-            <div class="hotel-st">
-             <div id="stars-existing" class="starrr" data-rating='4'></div> 
-         </div>
-         <div class="clear"></div>
-         <div class="rooms my-padding">
-            <div class="room-nu room-nu-first">
-                <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu">
-                2x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu">
-                3x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu">
-                4x <i class="fa fa-male" aria-hidden="true"></i> 
-            </div>
-            <div class="room-nu">
-                5x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>
-            <div class="room-nu room-nu-last">
-                6x <i class="fa fa-male" aria-hidden="true"></i>
-            </div>                    
-        </div>
-        <div class="clear"></div>                
-        <div class="rooms-white my-padding">
-            <div class="room-nu-white-offer room-nu-first-white">
-                100
-            </div>
-            <div class="room-nu-white-offer">
-                200 
-            </div>
-            <div class="room-nu-white-offer">
-                300
-            </div>
-            <div class="room-nu-white-offer">
-                400
-            </div>
-            <div class="room-nu-white-offer">
-                500
-            </div>
-            <div class="room-nu-white-offer room-nu-last-white">
-                600
-            </div>                    
-        </div>                
-    </div>                  
-</div>                
-</div>                              
-</div>
-<div class="the-filter-button">
-    <button class="filter-button"><i class="fa fa-filter" aria-hidden="true"></i></button>
-</div>                              
+    <div class="the-filter-button">
+        <button class="filter-button"><i class="fa fa-filter" aria-hidden="true"></i></button>
+    </div>                              
 </main>
-<script src="js/slideout.js"></script>
+
+
+
+
+
 <script src="js/jquery.bxslider.min.js"></script>
 <script>
-    $('.bxslider').bxSlider({
-  pagerCustom: '#bx-pager'
-});
+                $('.bxslider').bxSlider({
+                    pagerCustom: '#bx-pager'
+                });
 </script>
-    
+
 <script>
-    $(document).ready(function() {
-        $("#opr").click(function(){
-          $(".vis, .count").removeClass('show');
-          $(".vis, .count").addClass('hide');
-          $(".opr").removeClass('hide');
-          $(".opr").addClass('show');
-          $("#vis, #count").removeClass('icon-active');
-          $("#opr").addClass('icon-active');                     
-      });
-        $("#vis").click(function(){
-          $(".opr, .count").removeClass('show');
-          $(".opr, .count").addClass('hide');
-          $(".vis").removeClass('hide');
-          $(".vis").addClass('show');
-          $("#count, #opr").removeClass('icon-active');
-          $("#vis").addClass('icon-active');                     
-      });
-        $("#count").click(function(){
-          $(".vis, .opr").removeClass('show');
-          $(".vis, .opr").addClass('hide');
-          $(".count").removeClass('hide');
-          $(".count").addClass('show');
-          $("#vis, #opr").removeClass('icon-active');
-          $("#count").addClass('icon-active');                  
-      });            
+    $(document).ready(function () {
+        $("#opr").click(function () {
+            $(".vis, .count").removeClass('show');
+            $(".vis, .count").addClass('hide');
+            $(".opr").removeClass('hide');
+            $(".opr").addClass('show');
+            $("#vis, #count").removeClass('icon-active');
+            $("#opr").addClass('icon-active');
+        });
+        $("#vis").click(function () {
+            $(".opr, .count").removeClass('show');
+            $(".opr, .count").addClass('hide');
+            $(".vis").removeClass('hide');
+            $(".vis").addClass('show');
+            $("#count, #opr").removeClass('icon-active');
+            $("#vis").addClass('icon-active');
+        });
+        $("#count").click(function () {
+            $(".vis, .opr").removeClass('show');
+            $(".vis, .opr").addClass('hide');
+            $(".count").removeClass('hide');
+            $(".count").addClass('show');
+            $("#vis, #opr").removeClass('icon-active');
+            $("#count").addClass('icon-active');
+        });
     });
 </script> 
 <script type="text/javascript">
     var __slice = [].slice;
 
-    (function($, window) {
+    (function ($, window) {
         var Starrr;
 
-        Starrr = (function() {
+        Starrr = (function () {
             Starrr.prototype.defaults = {
                 rating: void 0,
                 numStars: 5,
-                change: function(e, value) {}
+                change: function (e, value) {}
             };
 
             function Starrr($el, options) {
                 var i, _, _ref,
-                _this = this;
+                        _this = this;
 
                 this.options = $.extend({}, this.defaults, options);
                 this.$el = $el;
@@ -803,19 +825,19 @@
                 }
                 this.createStars();
                 this.syncRating();
-                this.$el.on('mouseover.starrr', 'i', function(e) {
+                this.$el.on('mouseover.starrr', 'i', function (e) {
                     return _this.syncRating(_this.$el.find('i').index(e.currentTarget) + 1);
                 });
-                this.$el.on('mouseout.starrr', function() {
+                this.$el.on('mouseout.starrr', function () {
                     return _this.syncRating();
                 });
-                this.$el.on('click.starrr', 'i', function(e) {
+                this.$el.on('click.starrr', 'i', function (e) {
                     return _this.setRating(_this.$el.find('i').index(e.currentTarget) + 1);
                 });
                 this.$el.on('starrr:change', this.options.change);
             }
 
-            Starrr.prototype.createStars = function() {
+            Starrr.prototype.createStars = function () {
                 var _i, _ref, _results;
 
                 _results = [];
@@ -825,7 +847,7 @@
                 return _results;
             };
 
-            Starrr.prototype.setRating = function(rating) {
+            Starrr.prototype.setRating = function (rating) {
                 if (this.options.rating === rating) {
                     rating = void 0;
                 }
@@ -834,7 +856,7 @@
                 return this.$el.trigger('starrr:change', rating);
             };
 
-            Starrr.prototype.syncRating = function(rating) {
+            Starrr.prototype.syncRating = function (rating) {
                 var i, _i, _j, _ref;
 
                 rating || (rating = this.options.rating);
@@ -857,11 +879,11 @@
 
         })();
         return $.fn.extend({
-            starrr: function() {
+            starrr: function () {
                 var args, option;
 
                 option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
-                return this.each(function() {
+                return this.each(function () {
                     var data;
 
                     data = $(this).data('star-rating');
@@ -876,54 +898,54 @@
         });
     })(window.jQuery, window);
 
-    $(function() {
+    $(function () {
         return $(".starrr").starrr();
     });
 
-    $( document ).ready(function() {
+    $(document).ready(function () {
 
-      $('#stars').on('starrr:change', function(e, value){
-        $('#count').html(value);
-    });
+        $('#stars').on('starrr:change', function (e, value) {
+            $('#count').html(value);
+        });
 
-      $('#stars-existing').on('starrr:change', function(e, value){
-        $('#count-existing').html(value);
+        $('#stars-existing').on('starrr:change', function (e, value) {
+            $('#count-existing').html(value);
+        });
     });
-  });
 </script>   
 <script>
-    $(document).ready(function() {
-        $(".first-h").click(function(){
-          $(".two-of , .three-of").removeClass('show');
-          $(".two-of , .three-of").addClass('hide');
-          $(".one-of").removeClass('hide');
-          $(".one-of").addClass('show');
-          $(".third-grop , .second-grop").removeClass('grop-active');
-          $(".first-grop").addClass('grop-active');                     
-      });
-        $(".second-h").click(function(){
-          $(".one-of , .three-of").removeClass('show');
-          $(".one-of , .three-of").addClass('hide');
-          $(".two-of").removeClass('hide');
-          $(".two-of").addClass('show');
-          $(".first-grop , .third-grop").removeClass('grop-active');
-          $(".second-grop").addClass('grop-active');                       
-      });
-        $(".third-h").click(function(){
-          $(".one-of , .two-of ").removeClass('show');
-          $(".one-of , .two-of").addClass('hide');
-          $(".three-of").removeClass('hide');
-          $(".three-of").addClass('show');
-          $(".first-grop , .second-grop").removeClass('grop-active');
-          $(".third-grop").addClass('grop-active');          
-      });
+    $(document).ready(function () {
+        $(".first-h").click(function () {
+            $(".two-of , .three-of").removeClass('show');
+            $(".two-of , .three-of").addClass('hide');
+            $(".one-of").removeClass('hide');
+            $(".one-of").addClass('show');
+            $(".third-grop , .second-grop").removeClass('grop-active');
+            $(".first-grop").addClass('grop-active');
+        });
+        $(".second-h").click(function () {
+            $(".one-of , .three-of").removeClass('show');
+            $(".one-of , .three-of").addClass('hide');
+            $(".two-of").removeClass('hide');
+            $(".two-of").addClass('show');
+            $(".first-grop , .third-grop").removeClass('grop-active');
+            $(".second-grop").addClass('grop-active');
+        });
+        $(".third-h").click(function () {
+            $(".one-of , .two-of ").removeClass('show');
+            $(".one-of , .two-of").addClass('hide');
+            $(".three-of").removeClass('hide');
+            $(".three-of").addClass('show');
+            $(".first-grop , .second-grop").removeClass('grop-active');
+            $(".third-grop").addClass('grop-active');
+        });
 
 
     });
 </script>   
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".fa-sort-amount-asc").click(function(){
+    $(document).ready(function () {
+        $(".fa-sort-amount-asc").click(function () {
             $(".slide-list").toggle();
         });
     });
