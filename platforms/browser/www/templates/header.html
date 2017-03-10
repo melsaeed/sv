@@ -1,63 +1,66 @@
 <nav id="menu" class="menu" ng-controller="menuCtrl">
-            <div class="menu">
-            <div class="menu-head">
-                <div class="menu-img">
-                    <img src="images/safa-20.jpg" class="menu-img-in">
-                    <img src="images/user.png" class="cy-company-img">
-                    <h3 class="company-menu-name">{{user.company_name}}</h3>
-                </div>
+    <div class="menu">
+        <div class="menu-head">
+            <div class="menu-img">
+                <img src="images/safa-20.jpg" class="menu-img-in">
+                <img src="images/user.png" class="cy-company-img" ng-hide="user.img">
+                <img ng-src="{{user.img}}" class="cy-company-img" ng-show="user.img">
+                <h3 class="company-menu-name">{{user.first_name}}</h3>
             </div>
-            <div class="menu-body">
-                <ul class="menu-body-ul">
-                    <li class="menu-body-li">
-                        <img src="images/icon-3-1.png" class="my-img-to-right">
-                        <a href="#/dashboard" class="my-a first-a"> الرئيسية</a>
-                    </li>
-                    <li class="menu-body-li">
-                        <img src="images/icon-3-2.png" class="my-img-to-right">
-                        <a href="#/promos" class="my-a">العروض الخاصة</a> 
-                    </li>
-<!--                    <li class="menu-body-li menu-body-li-three">
-                        <img src="images/icon-3-3.png" class="my-img-to-right">
-                        <a href="#/system" class="my-a">أنظمة صفا</a> 
-                        <span class="my-span-to-left"><img src="images/icon-3-8.png"></span>
-                    </li>-->
-<!--                    <li class="menu-body-li">
-                        <img src="images/icon-3-4.png" class="my-img-to-right">
-                        <a href="#/users" class="my-a">فريق العمل</a>
-                    </li>-->
-<!--                    <li class="menu-body-li">
-                        <img src="images/icon-3-5.png" class="my-img-to-right">
-                        <a href="#/training" class="my-a">مركز التدريب</a>
-                    </li>-->
-<!--                    <li class="menu-body-li">
-                        <img src="images/icon-3-6.png" class="my-img-to-right">
-                        <a href="#/profile" class="my-a">بروفايلى</a>
-                    </li>-->
-                    <li class="menu-body-li menu-body-li-last">
-                        <img src="images/icon-3-7.png" class="my-img-to-right">
-                        <a href="#/logout" class="my-a">تسجيل الخروج</a>
-                    </li>
-                </ul>
-            </div>
-            </div>   
-        </nav>    
-        
-        <script>
-            $(document).ready(function(){
-            var slideout = new Slideout({
-              'panel': document.getElementById('panel'),
-              'menu': document.getElementById('menu'),
-              'side': 'right'
-            });
+        </div>
+        <div class="menu-body">
+            <ul class="menu-body-ul">
+                <li class="menu-body-li">
+                    <img src="images/icon-3-1.png" class="my-img-to-right">
+                    <a href="#/dashboard" class="my-a first-a"> الرئيسية</a>
+                </li>
+                <li class="menu-body-li">
+                    <img src="images/icon-3-2.png" class="my-img-to-right">
+                    <a href="#/promos" class="my-a">العروض الخاصة</a> 
+                </li>
+                <!--                    <li class="menu-body-li menu-body-li-three">
+                                        <img src="images/icon-3-3.png" class="my-img-to-right">
+                                        <a href="#/system" class="my-a">أنظمة صفا</a> 
+                                        <span class="my-span-to-left"><img src="images/icon-3-8.png"></span>
+                                    </li>-->
+                <!--                    <li class="menu-body-li">
+                                        <img src="images/icon-3-4.png" class="my-img-to-right">
+                                        <a href="#/users" class="my-a">فريق العمل</a>
+                                    </li>-->
+                <!--                    <li class="menu-body-li">
+                                        <img src="images/icon-3-5.png" class="my-img-to-right">
+                                        <a href="#/training" class="my-a">مركز التدريب</a>
+                                    </li>-->
+                <!--                    <li class="menu-body-li">
+                                        <img src="images/icon-3-6.png" class="my-img-to-right">
+                                        <a href="#/profile" class="my-a">بروفايلى</a>
+                                    </li>-->
+                <li class="menu-body-li menu-body-li-last">
+                    <img src="images/icon-3-7.png" class="my-img-to-right">
+                    <a href="#/logout" class="my-a">تسجيل الخروج</a>
+                </li>
+            </ul>
+        </div>
+    </div>   
+</nav>    
 
-            document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
-              slideout.toggle();
-            });
+<script>
+    $(document).ready(function () {
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'side': 'right'
+        });
 
-            document.querySelector('.menu').addEventListener('click', function(eve) {
-              if (eve.target.nodeName === 'A') { slideout.close(); }
-            });    
-            });
-            
-        </script>          
+        document.querySelector('.js-slideout-toggle').addEventListener('click', function () {
+            slideout.toggle();
+        });
+
+        document.querySelector('.menu').addEventListener('click', function (eve) {
+            if (eve.target.nodeName === 'A') {
+                slideout.close();
+            }
+        });
+    });
+
+</script>          

@@ -1,15 +1,15 @@
 safa.controller('menuCtrl', function ($scope, $rootScope, $http, $location) {
     
     
-//    $http.get(api_url + "profile")
-//            .then(function (response) {
-//                if (response.error) {
-//                    $location.path("/login");
-//                }
+    $http.get(api_url + "profile?token="+window.localStorage.getItem('token'))
+            .then(function (response) {
+                if (response.error) {
+                    $location.path("/login");
+                }
 //                loading.stop();
                
-//                $rootScope.user = response.data.user;
-                $scope.user = JSON.parse(window.localStorage.getItem('login'));
+                $rootScope.user = response.data.user;
+//                $scope.user = JSON.parse(window.localStorage.getItem('login'));
 
 
 //                $rootScope.MyCompany = $rootScope.user.group.filter(function (x) {
@@ -37,5 +37,5 @@ safa.controller('menuCtrl', function ($scope, $rootScope, $http, $location) {
                 
 //            }, function (response) {
 //                $location.path("/login");
-//            });
+            });
 });

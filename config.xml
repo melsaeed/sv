@@ -2,7 +2,7 @@
 <widget id="com.safavisa.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Safavisa</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Safa Visa Offline for Umrah App ,the latest technology for Umrah pioneers
     </description>
     <author email="m.elsaeed@brightery.com" href="http://brightery.com">
         Muhammad El-Saeed
