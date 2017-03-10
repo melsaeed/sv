@@ -2,7 +2,7 @@
 safa.controller('forgetPasswordCtrl', function ($scope, $http, $rootScope, $location) {
     $scope.forget_password = function () {
         if ($scope.email.length == 0) {
-            error.fire("بريد إلكتروني غير صحيح");
+            alert("بريد إلكتروني غير صحيح");
         }
         else {
             $http({
@@ -11,9 +11,9 @@ safa.controller('forgetPasswordCtrl', function ($scope, $http, $rootScope, $loca
                 data: {email: $scope.email}
             }).then(function (response) {
                 if (response.data.error)
-                    error.fire("بريد إلكتروني غير مطابق");
+                    alert("بريد إلكتروني غير مطابق");
                 else
-                    error.fire("تم ارسال بريد إلكتروني لتقوم بتغيير كلمة المرور، شكرا لك");
+                    alert("تم ارسال بريد إلكتروني لتقوم بتغيير كلمة المرور، شكرا لك");
             });
         }
     }

@@ -6,7 +6,8 @@
 
 
 safa.controller('loginCtrl', function ($scope, $http, $location, $cookies) {
-    $scope.credintials = {key: '', email: "", password: ""};//{key: '9999', email: "h.jabban@safavisa.com", password: "2120828"};
+    $scope.credintials = {key: '', email: "", password: ""};
+    $scope.credintials = {key: '9999', email: "h.jabban@safavisa.com", password: "2120828"};
     $scope.login = function () {
         
         $('button').html("<i class='fa fa-spinner fa-pulse fa-fw'></i>");

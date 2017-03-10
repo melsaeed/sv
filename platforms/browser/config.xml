@@ -10,24 +10,18 @@
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="m.elsaeed@brightery.com" href="http://brightery.com">
+        Muhammad El-Saeed
     </author>
     <content src="index.html" />
     <allow-navigation href="*" />
     <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
     <allow-navigation href="*" subdomains="true" />
     <access launch-external="yes" origin="*" />
     <allow-intent href="*" />
-    <preference name="websecurity" value="disable" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="websecurity" value="disable" />
     <preference name="SplashScreenDelay" value="10000" />
     <preference name="FadeSplashScreen" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />

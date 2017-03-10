@@ -2844,3 +2844,9 @@ bottom: -105px;
 .panel{
     background: #fff;
 }
+.mail-before .fa-key {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    z-index: 5555555;
+}
