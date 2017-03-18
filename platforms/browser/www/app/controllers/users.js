@@ -1,5 +1,6 @@
 safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
     $scope.MainTitle = 'الفريق';
+    
     $scope.tab_content = "templates/users/users.html";
 
     $scope.userEmail = '';
@@ -155,7 +156,9 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      * USER INVITATION
      **/
     $scope.userInvitation = function () {
-        $("#addEmp").modal('show');
+        var inst = $('[data-remodal-id=modal]').remodal();
+        inst.open();
+
     };
 
     $scope._userInvitation = function () {
