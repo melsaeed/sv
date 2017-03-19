@@ -31,6 +31,35 @@
 
 
 
+<div class="modal fade" id="invit">
+  <div class="modal-content">  
+      <button class="log-button-d">ارسال دعوة لموظف</button>
+    <div class="form-content mail-before new-d">
+        <input type="text" class="log-input h-input user-input" placeholder="الاسم الاول" ng-model="uinv.fname">                     
+    </div>
+    <div class="form-content mail-before new-d">
+        <input type="text" class="log-input h-input user-input" placeholder="الاسم الثانى" ng-model="uinv.lname">                     
+    </div>
+    <div class="form-content mail-before new-d">
+        <input type="text" class="log-input h-input user-input" placeholder="البريد الالكترونى" ng-model="uinv.email">                     
+    </div>      
+    <select ng-model="uinv.popup_group_id"  class="send-drop d-select">
+        <option ng-repeat="group in groups" ng-value="group.company_group_id">
+            {{group.name}}
+        </option>
+    </select>
+    <select class="send-drop d-select">
+        <option value="volvo">اختار الفرع</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select>                                                            
+    <br>
+    <button ng-click="_userInvitation()" data-remodal-action="confirm" class="remodal-confirm">ارسال</button>        
+    <button data-remodal-action="cancel" class="remodal-cancel">الغاء</button>
+</div>
+</div>
+
 
 
 <div class="theme-showcase  tab1-employees" role="main">

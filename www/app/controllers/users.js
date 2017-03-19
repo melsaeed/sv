@@ -157,7 +157,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      **/
     $scope.userInvitation = function () {
         
-        
+        modal('invit');
         
    
 
