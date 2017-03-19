@@ -156,8 +156,11 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      * USER INVITATION
      **/
     $scope.userInvitation = function () {
-        var inst = $('[data-remodal-id=modal]').remodal();
-        inst.open();
+        
+        
+        
+   
+
 
     };
 

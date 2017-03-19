@@ -5,7 +5,7 @@
  */
 var safa = angular.module('safa', [
     'ngRoute',
-    'ngCookies',
+    'ngCookies'
 ]);
 
 safa.config(function ($routeProvider, $httpProvider) {
