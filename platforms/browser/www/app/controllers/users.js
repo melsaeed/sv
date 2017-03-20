@@ -240,7 +240,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      * CREATE GROUP
      **/
     $scope.createGroup = function () {
-        $location.path('create_group');
+        modal('manageGroups');
     };
 
     /**

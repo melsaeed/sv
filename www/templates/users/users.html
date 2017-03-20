@@ -2,10 +2,10 @@
         <input type="text" class="log-input h-input" placeholder="بحث" ng-model="search">
         <div class="new-block" ng-repeat="user in key.users | filter: search" ng-hide="user.deleted">
             <div class="first-lock">
-                <img ng-src="http://login.safavisa.com/public/profile/{{user.img}}" class="the-user">
+                <img ng-src="{{ user.img ? 'http://login.safavisa.com/public/profile/' + user.img : 'images/HiRes_Large.jpg'}}" class="the-user">
             </div>
             <div class="second-lock">
-                <h4 class="user-head-one">{{user.full_name}}</h4>
+                <h4 class="user-head-one">{{user.first_name}}</h4>
                 <h5 class="user-head-two">{{user.gname}}</h5>
                 <!--<h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>-->
             </div>
