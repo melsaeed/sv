@@ -2858,7 +2858,7 @@ bottom: -105px;
     width: 100%;
 }
 .panel{
-    background: #fff;
+    background: #e0e4e5;
 }
 .mail-before .fa-key {
     position: absolute;
@@ -2891,4 +2891,7 @@ bottom: -105px;
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 10px;
     padding-bottom: 5px;
+}
+body{
+    background: #e0e4e5;
 }

@@ -47,6 +47,16 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
         $location.path("/login");
     });
 
+
+
+    $http({
+        url: api_url + 'screen/display?token='+window.localStorage.getItem("token"),
+        method: "GET"
+    }).then(function (res) {
+        $scope.screens = res.data;
+    });
+    
+    
     $scope.select_group = function (idx) {
         if ($scope.key.company.group[idx].expand)
             $scope.key.company.group[idx].expand = 0;
@@ -179,7 +189,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      **/
     $scope.delete_group = function (index) {
         $scope.deletetedGroupIdx = index;
-        $('#deletGroup').modal('show');
+        modal('deleteEmp');
     };
 
     $scope._delete_group = function () {
@@ -338,13 +348,13 @@ safa.controller('create_groupCtrl', function ($scope, $rootScope, $http, $locati
     $scope._manageGroup = function () {
         $scope._createNewGroup();
     };
-});
 
-/**
- * EDIT EXISTING GROUP
- **/
-safa.controller('edit_groupCtrl', function ($scope, $rootScope, $http, $location, $routeParams) {
 
+
+
+
+
+// groups
     $rootScope.newGroupName;
     $scope.checkPermission = Array();
     $scope.srcenz = Array();
