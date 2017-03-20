@@ -43,6 +43,17 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
                 $scope.users2_group_id = $scope.groups[0];
             }
         });
+
+        $http({
+            url: api_url + 'lookups/team?token='+window.localStorage.getItem("token"),
+            method: 'GET',
+        }).then(function (response) {
+            if (response.data.error)
+                alert(response.data.message);
+            else {
+                $scope.team = response.data;
+            }
+        });
     }, function (response) {
         $location.path("/login");
     });
@@ -100,7 +111,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
             data: {company_user_request_id: $scope.sm1, group_id: $scope.users1_group_id.company_group_id},
             method: "POST"
         }).then(function (res) {
-            $('#addGroup').modal('hide');
+            $('#addGroup').hide();
             $($scope.key.users).each(function (x, y) {
                 if ($scope.key.users[x].checked == 1) {
                     $scope.key.users[x].checked = 0;
@@ -159,7 +170,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      **/
     $scope.addUserToGroup = function () {
         if ($scope.sm1.length)
-            $("#addGroup").modal('show');
+            modal("addGroup");
     };
 
     /**
@@ -189,7 +200,7 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
      **/
     $scope.delete_group = function (index) {
         $scope.deletetedGroupIdx = index;
-        modal('deleteEmp');
+        modal('deleteGroup');
     };
 
     $scope._delete_group = function () {
@@ -290,6 +301,19 @@ safa.controller('usersCtrl', function ($scope, $http, $rootScope, $location) {
             //$scope.sm3 = Array();
         });
     };
+    
+    
+    $scope.new_branch = function(){
+        
+    };
+    
+    
+    
+    $scope.newEmpInBranch = function(item){
+        
+    };
+    
+    
 });
 
 /**

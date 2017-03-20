@@ -63,7 +63,6 @@
 
             <div ng-repeat="item in draw('2')" style="margin-bottom: 10px;">
 
-
                 <div class="before-space">
                     <div class="offer-space">
                         <div class="the-hotel">
@@ -127,7 +126,7 @@
                                 <img ng-src="{{item.company.logo}}" class="hotel-im-in">
                             </div>
                             <div class="hotel-na">
-                                <h4 class="user-head-one">{{item.ro_name}}</h4>
+                                <h4 class="user-head-one">{{item.company.name}}</h4>
                                 <h5 class="user-head-two">{{item.title}}</h5>
                                 <h5 class="user-head-three">{{item.company.country.name}}</h5>
                             </div>
@@ -160,22 +159,22 @@
                             <div class="clear"></div>                
                             <div class="rooms-white my-padding" ng-repeat="price in item.content.content_hotel.prices">
                                 <div class="room-nu-white-offer room-nu-first-white">
-                                    {{price.price_1}}
+                                    {{price.price1.value}}
                                 </div>
                                 <div class="room-nu-white-offer">
-                                    {{price.price_2}}
+                                    {{price.price2.value}}
                                 </div>
                                 <div class="room-nu-white-offer">
-                                    {{price.price_3}}
+                                    {{price.price3.value}}
                                 </div>
                                 <div class="room-nu-white-offer">
-                                    {{price.price_4}}
+                                    {{price.price4.value}}
                                 </div>
                                 <div class="room-nu-white-offer">
-                                    {{price.price_5}}
+                                    {{price.price5.value}}
                                 </div>
                                 <div class="room-nu-white-offer room-nu-last-white">
-                                    {{price.price_6}}
+                                    {{price.price6.value}}
                                 </div>                    
                             </div>                
                         </div>                  
@@ -197,7 +196,7 @@
                             <img src="images/safa-4.jpg" class="hotel-im-in">
                         </div>
                         <div class="hotel-na space-na">
-                            <h4 class="user-head-one">احمد محمد محمود</h4>
+                            <h4 class="user-head-one">{{item.company.name}}</h4>
                             <div class="three-color-btns-small">
                                 <div class="color-btns">
                                     <button class="th-color the-blue"><img src="images/safa-107.png" class="seat-img"></button>

@@ -1,21 +1,21 @@
 <div class="">
-    
+
     <div ng-repeat="item in key.company.group" >
         <button class="new-block new-block-no" id="sales" onclick="$(this).next().toggle()">
             <div class="second-lock">
                 <h4 class="user-head-no">{{item.name}}</h4>
             </div>
-<!--            <div class="third-lock third-lock-no">
-                <a href="" class="the-lock"><i class="fa fa-lock" aria-hidden="true"></i></a>
-                <span class="kill-a">
-                    <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                </span>                  
-                <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-            </div>-->
+                        <div class="third-lock third-lock-no">
+<!--                            <a href="" class="the-lock"><i class="fa fa-lock" aria-hidden="true"></i></a>
+                            <span class="kill-a">
+                                <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                            </span>                  -->
+                            <!--<a href="javascript:void(0)" ng-click="deleteGroup($index)" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>-->
+                        </div>
         </button>   
         <div class="edit-emp sales hide">
-            <button class="emp-button" ng-click="add_employee(item)">اضافة موظف</button>
-            
+            <!--<button class="emp-button" ng-click="add_employee(item)">اضافة موظف</button>-->
+
             <div class="new-block" ng-repeat="user in item.user">
                 <div class="first-lock">
                     <img ng-src="{{ user.img ? 'http://login.safavisa.com/public/profile/' + user.img : 'images/HiRes_Large.jpg'}}" class="the-user">
@@ -26,9 +26,9 @@
                     <!--<h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>-->
                 </div>
                 <div class="third-lock">
-<!--                    <span class="kill-a">
-                        <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                    </span>-->
+                    <!--                    <span class="kill-a">
+                                            <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
+                                        </span>-->
 
                     <a ng-click="user_status1($index)"  class="the-play"><i ng-class="user.deactivated == 1 ? 'open-emp fa fa-play' : 'stop-emp fa fa-pause'" aria-hidden="true"></i></a>
                     <a href="javascript:void(0)" ng-click="_delete_user($index)" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
@@ -36,8 +36,8 @@
             </div>     
         </div>
     </div>
-    <button class="emp-button emp-button-two" ng-click="createGroup()">اضافة فريق جديد</button>    
-    </div>
+    <!--<button class="emp-button emp-button-two" ng-click="createGroup()">اضافة فريق جديد</button>-->    
+</div>
 
 
 
@@ -103,119 +103,23 @@
 
 
 
-<div class="remodal" id="manageGroups" data-remodal-id="modal-edit-roles">
+<div class="remodal modal" id="manageGroups" data-remodal-id="modal-edit-roles">
     <div class="in-the-center">
-        <h3 class="center-head-in">تعديل صلاحيات الادارة</h3>
-        <button class="new-block new-block-no" id="opr">
-            <div class="second-lock">
-                <h4 class="user-head-nod">عمليات</h4>
-            </div>
-        </button> 
-        <div class="uder-the-center show opr">
-            <label class="control control--checkbox the-center-check">صفا فيزا
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة التحركات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">اضافة وظيفة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة الرحلات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check-last">مفتاح الشركة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>                                   
-        </div>             
-        <button class="new-block new-block-no" id="vis">
-            <div class="second-lock">
-                <h4 class="user-head-nod">تأشيرات</h4>
-            </div>
-        </button>  
-        <div class="uder-the-center hide vis">
-            <label class="control control--checkbox the-center-check">صفا فيزا
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة التحركات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">اضافة وظيفة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة الرحلات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check-last">مفتاح الشركة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>                                   
-        </div>                    
-        <button class="new-block new-block-no" id="count">
-            <div class="second-lock">
-                <h4 class="user-head-nod">حسابات</h4>
-            </div>
-        </button>  
-        <div class="uder-the-center hide count">
-            <label class="control control--checkbox the-center-check">صفا فيزا
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة التحركات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">اضافة وظيفة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة الرحلات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check-last">مفتاح الشركة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>                                   
-        </div>                    
-        <button class="new-block new-block-no" id="cel">
-            <div class="second-lock">
-                <h4 class="user-head-nod">مبيعات</h4>
-            </div>
-        </button> 
-        <div class="uder-the-center hide cel">
-            <label class="control control--checkbox the-center-check">صفا فيزا
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة التحركات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">اضافة وظيفة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check">ادارة الرحلات
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox the-center-check-last">مفتاح الشركة
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>                                   
-        </div>                     
+        <div ng-repeat="(key, value) in screens">
+            <button class="new-block new-block-no" id="opr">
+                <div class="second-lock">
+                    <h4 class="user-head-nod">{{key}}</h4>
+                </div>
+            </button> 
+            <div class="uder-the-center show opr">
+                <label class="control control--checkbox the-center-check" ng-repeat="perm in value"> {{perm.screen_key}}
+                    <input type="checkbox" checked="checked" ng-model="perm.checked"/>
+                    <div class="control__indicator"></div>
+                </label>
+            </div>     
+        </div>
     </div>      
     <br>
-    <button data-remodal-action="confirm" class="remodal-confirm">حفظ</button>        
+    <button data-remodal-action="confirm" class="remodal-confirm" ng-click="">حفظ</button>        
     <button data-remodal-action="cancel" class="remodal-cancel">الغاء</button>
 </div>

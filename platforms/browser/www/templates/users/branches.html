@@ -1,147 +1,43 @@
-<div class="three-h hide">
-        <button class="new-block new-block-no" id="first-branch">
+<div class="three-h">
+    <div ng-repeat="item in team.branches">
+        <button class="new-block new-block-no" id="first-branch" onclick="$(this).next().toggle()">
             <div class="second-lock">
-                <h4 class="user-head-no">فرع السعودية</h4>
+                <h4 class="user-head-no">{{item.name}}</h4>
             </div>
             <div class="third-lock third-lock-no">
-                <span class="kill-a">
+<!--                <span class="kill-a">
                     <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
                 </span>                   
-                <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>-->
 
             </div>
         </button>   
-        <div class="edit-emp sales show">
-            <button class="emp-button">اضافة موظف</button>
-            <div class="new-block">
+        <div class="edit-emp sales hide">
+            <!--<button class="emp-button" ng-click="newEmpInBranch(item)">اضافة موظف</button>-->
+            <div class="new-block" ng-repeat="user in team.users" ng-show="(item.branch_id == user.branch_id)">
                 <div class="first-lock">
-                    <img src="images/HiRes_Large.jpg" class="the-user">
+                    <img ng-src="{{ user.img ? 'http://login.safavisa.com/public/profile/' + user.img : 'images/HiRes_Large.jpg'}}"  class="the-user">
                 </div>
                 <div class="second-lock">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
+                    <h4 class="user-head-one">{{user.first_name}}</h4>
+                    <h5 class="user-head-two">{{user.gname}}</h5>
+                    <h5 class="user-head-three">{{item.name}}<span class="my-span">|</span>{{user.gname}}</h5>
                 </div>
                 <div class="third-lock">
-                    <span class="kill-a">
+<!--                    <span class="kill-a">
                         <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
                     </span>
                     <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>-->
+<!--                    <a ng-click="user_status1($index)"  class="the-play"><i ng-class="user.deactivated == 1 ? 'open-emp fa fa-play' : 'stop-emp fa fa-pause'" aria-hidden="true"></i></a>
+                    <a href="javascript:void(0)" ng-click="_delete_user($index)" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>-->
 
                 </div>
 
             </div> 
-            <div class="new-block">
-                <div class="first-lock">
-                    <img src="images/HiRes_Large.jpg" class="the-user">
-                </div>
-                <div class="second-lock">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="third-lock">
-                    <span class="kill-a">
-                        <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                    </span>
-                    <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-
-                </div>
-
-            </div> 
-            <div class="new-block">
-                <div class="first-lock">
-                    <img src="images/HiRes_Large.jpg" class="the-user">
-                </div>
-                <div class="second-lock">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="third-lock">
-                    <span class="kill-a">
-                        <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                    </span>
-                    <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-
-                </div>
-
-            </div>       
+                 
         </div>
-        <button class="new-block new-block-no" id="second-branch">
-            <div class="second-lock">
-                <h4 class="user-head-no">فرع السعودية</h4>
-            </div>
-            <div class="third-lock third-lock-no">
-                <span class="kill-a">
-                    <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                </span>                 
-                <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+    </div>
 
-            </div>
-        </button> 
-        <div class="edit-emp support hide">
-            <button class="emp-button">اضافة موظف</button>
-            <div class="new-block">
-                <div class="first-lock">
-                    <img src="images/HiRes_Large.jpg" class="the-user">
-                </div>
-                <div class="second-lock">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="third-lock">
-                    <span class="kill-a">
-                        <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                    </span>
-                    <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-
-                </div>
-
-            </div> 
-            <div class="new-block">
-                <div class="first-lock">
-                    <img src="images/HiRes_Large.jpg" class="the-user">
-                </div>
-                <div class="second-lock">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="third-lock">
-                    <span class="kill-a">
-                        <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                    </span>
-                    <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-
-                </div>
-
-            </div> 
-            <div class="new-block">
-                <div class="first-lock">
-                    <img src="images/HiRes_Large.jpg" class="the-user">
-                </div>
-                <div class="second-lock">
-                    <h4 class="user-head-one">احمد محمد محمود</h4>
-                    <h5 class="user-head-two">مدير المبيعات</h5>
-                    <h5 class="user-head-three">فرع السعودية<span class="my-span">|</span>فريق المبيعات</h5>
-                </div>
-                <div class="third-lock">
-                    <span class="kill-a">
-                        <a href="" class="the-edittt"><i class="fa fa-pencil" aria-hidden="true"></i></a>     
-                    </span>
-                    <a href="" class="the-play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                    <a href="" class="the-wrong"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-
-                </div>
-
-            </div>       
-        </div>                 
-        <button class="emp-button emp-button-two">اضافة فرع جديد</button>    
-    </div>   
+    <!--<button class="emp-button emp-button-two" ng-click="new_branch()">اضافة فرع جديد</button>-->    
+</div>   
